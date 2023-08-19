@@ -141,7 +141,7 @@ export default function Stake() {
                                         STAKE_CONTRACT_ADDRESSES,
                                         stakeAmount
                                     );
-                                    await contract.call ("claimRewards"
+                                    await Contract.call ("claimRewards"
                                     );
                                 }}
                                 onSuccess={() => toast({
