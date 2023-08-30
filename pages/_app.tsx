@@ -13,9 +13,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThirdwebProvider
       clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
       activeChain={{// === Required information for connecting to the network === \\
-        chainId: 369, // Chain ID of the network
+        chainId: 42161, // Chain ID of the network
         // Array of RPC URLs to use
-        rpc: [" https://arb1.arbitrum.io/rpc "],
+        rpc: ["https://rpc.arb1.arbitrum.gateway.fm"],
 
         // === Information for adding the network to your wallet (how it will appear for first time users) === \\
         // Information about the chain's native currency (i.e. the currency that is used to pay for gas)
