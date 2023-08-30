@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.
 // You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
-const activeChain = "pulsechain";
+const activeChain = "arbitrum";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -15,20 +15,20 @@ function MyApp({ Component, pageProps }: AppProps) {
       activeChain={{// === Required information for connecting to the network === \\
         chainId: 369, // Chain ID of the network
         // Array of RPC URLs to use
-        rpc: [" https://scan.pulsechain.com/api "],
+        rpc: [" https://arb1.arbitrum.io/rpc "],
 
         // === Information for adding the network to your wallet (how it will appear for first time users) === \\
         // Information about the chain's native currency (i.e. the currency that is used to pay for gas)
         nativeCurrency: {
           decimals: 18,
-          name: "PulseChain Mainet",
-          symbol: "PLS",
+          name: "Arbitrum One",
+          symbol: "ARB",
         },
-        shortName: "pulsechain", // Display value shown in the wallet UI
-        slug: "pulsechain", // Display value shown in the wallet UI
+        shortName: "arbitrum", // Display value shown in the wallet UI
+        slug: "arbitrum", // Display value shown in the wallet UI
         testnet: false, // Boolean indicating whether the chain is a testnet or mainnet
-        chain: "pulsechain", // Name of the network
-        name: "PulseChain Mainet", // Name of the network
+        chain: "arbitrum", // Name of the network
+        name: "Arbitrum One", // Name of the network
 }}
     ><ChakraProvider>
       <Navbar />
